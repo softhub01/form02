@@ -7,9 +7,10 @@
     <title>New Signup Page</title>
  
     <!-- Bootstrap css -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/blog.css" rel="stylesheet">
-
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/custom.min.css">
+	
+	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
@@ -24,70 +25,104 @@
   
   <body>
 
-    <div class="blog-masthead">
-      <div class="container">
-        <nav class="blog-nav">
-          <a class="blog-nav-item" href="index.html">Home</a>
-          <a class="blog-nav-item active" href="signup.html">New Signup</a>
-          <a class="blog-nav-item" href="login.html">Login</a>
-          <a class="blog-nav-item" href="resetpwd.html">Forgot Password</a>
-          <!--a class="blog-nav-item" href="admin.html">Admin</a-->
-        </nav>
-      </div>
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+			<a href="index.html" class="navbar-brand">Home</a>
+			<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			</div>
+        
+			<div class="navbar-collapse collapse" id="navbar-main">
+			<!--Reserved for future use-->
+			<!--ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="navbar-brand" href=#></a>
+
+            <li>
+              <a class="navbar-brand" href=#></a>
+            </li>
+            <li>
+              <a class="navbar-brand" href=#></a>
+            </li>
+
+			</ul-->		<!--Reserved for future use-->
+
+			<ul class="nav navbar-nav navbar-right">
+				<!--Example to open new tab by clicking on the nav bar link>
+				<li><a href="signup.html" target="_blank">New Signup</a></li-->		  
+		    
+				<li><a href="#">New Signup</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="resetpwd.html">Forgot Password</a></li>			
+			</ul>
+
+			</div>
+		</div>
     </div>
 
     <div class="container">
+		<div class="page-header" id="banner">
+			<div class="row">
 
-      <div class="blog-header">
-        <p class="lead blog-description"></p>
-      </div>
-
-      <div class="row">
-
-        <div class="col-sm-8 blog-main">
-                 <div class="main-container">
+				<div class="col-lg-8 col-md-7 col-sm-6">
 				 
-				 <h1>Sign Up!</h1>
-					
+					<h1>Sign Up!</h1>
+					</br>
 					<form id="signup">
-						<p><input id="signup-name" type="text" placeholder="Username" required="" autofocus=""></p>
-						<p><input id="signup-password" type="password" placeholder="Password" required=""></p>
-						<p><input id="signup-email" type="email" placeholder="Email Address" required=""></p>
-						<p><input id="signup-submit" type="submit"</p>
+						<p><input id="signup-name" class="form-control" type="text" placeholder="Username" required="" autofocus=""></p>
+						<p><input id="signup-password" class="form-control" type="password" placeholder="Password" required=""></p>
+						<p><input id="signup-email" class="form-control" type="email" placeholder="Email Address" required=""></p>
+						<p><input id="signup-submit" class="form-control" type="submit"</p>
 					</form>	
-				 
-				 </div>
-          </div>	
+
+				</div>	
 
 
 
 
-        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-          <div class="sidebar-module sidebar-module-inset">
-            <h4>About Us</h4>
-            <p>We are just a team of beginners.</p>
-          </div>
+				<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+					<div class="sidebar-module sidebar-module-inset">
+						<h4>About Us</h4>
+						<p>We are just a team of beginners.</p>
+					</div>
 
-          <div class="sidebar-module">
-            <h4>Link(s)</h4>
-            <ol class="list-unstyled">
-              <li><a href="#">GitHub</a></li>
-            </ol>
-          </div>
-        </div><!-- /.blog-sidebar -->
+					<div class="sidebar-module">
+						<h4>Link(s)</h4>
+						<ol class="list-unstyled">
+						<li><a href="#">GitHub</a></li>
+						</ol>
+					</div>
+				</div><!-- /.blog-sidebar -->
 
-      </div><!-- /.row -->
+			</div><!-- /.row -->
 
-    </div><!-- /.container -->
+		</div><!-- /.page-header -->
 
-    <footer class="blog-footer">
-      <p>Testing page built for <a href="http://">softlab</a> by <a href="https://">@J&G</a>.</p>
-      <p>
-        <a href="#">Back to top</a>
-      </p>
-    </footer>
+	
+		<div class="bs-docs-section">	
+			<div class="page-header">
+      
+			<footer>
+				<div class="row">
+					<div class="col-lg-12">
 
+					<ul class="list-unstyled">
+					<!--li class="pull-right"><a href="#top">Back to top</a></li-->
+ 					</ul>
+					<p>Testing page built for <a href="http://">softlab</a> by <a href="https://">@J&G</a>.</p>
+					<p></p>
+					</div>
+				</div>
 
+			</footer>
+			
+			</div>
+		</div>	  
+    </div><!-- /.container -->		
 	
   </body>
 </html>

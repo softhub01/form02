@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Delete - Task(s)</title>
  
-    <!-- Bootstrap css-->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/blog.css" rel="stylesheet">
+    <!-- Bootstrap css -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/custom.min.css">
 
 	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -21,32 +21,40 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script2b.js"></script>
 
-	<script src="jQueryAssets/jquery-ui-1.9.2.datepicker.custom.min.js" type="text/javascript"></script>
-	<!--script src="jquery-ui-1.8.16.custom/js/jquery-ui-1.8.16.custom.min.js"></script-->
 	<script src="jQueryAssets/jquery-ui-1.9.2.js" type="text/javascript"></script>
   </head>
  
  <body>
 
-    <div class="blog-masthead">
-      <div class="container">
-        <nav class="blog-nav">
-          <!--a class="blog-nav-item" href="index.html">Home</a-->
-          <!--a class="blog-nav-item" href="#">New Registration</a>-->
-          <a class="blog-nav-item active" href="mainpage.html">Back to Main Page</a>
-          <!--<a class="blog-nav-item" href="#">Forgot ID/Password</a>-->
-          <!--<a class="blog-nav-item" href="admin.html">Admin</a>-->
-        </nav>
-      </div>
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+			<a href="mainpage.html" class="navbar-brand">Main Page</a>
+			<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			</div>
+        
+		</div>
     </div>
 
     <div class="container">
-			<!--Display Current User Name -->
-			<div id="current-user"></div>			
-			</br>
-			<div>
-				<button id="logout">Log Out</button>
-			</div>	
+		<div class="page-header" id="banner">
+			<div class="row">
+
+				<div class="col-lg-8 col-md-7 col-sm-6">
+			
+				<!--Display Current User Name -->
+				<strong><div id="current-user"></div></strong>
+				</br>		
+
+				<div>
+				
+					<button class="btn btn-primary" id="logout">Log Out</button>
+				
+				</div>	
 			
 			</br>
 				<!--Form i -->
@@ -65,14 +73,35 @@
 					</ul>	
 					</br>
 				</form>
+				
+				
+ 			</div><!-- /.row -->
+
+		</div><!-- /.page-header -->
+
+	</br>
+	
+		<div class="bs-docs-section">	
+			<div class="page-header">
+      
+			<footer>
+				<div class="row">
+					<div class="col-lg-12">
+
+					<ul class="list-unstyled">
+					<!--li class="pull-right"><a href="#top">Back to top</a></li-->
+ 					</ul>
+					<p>Testing page built for <a href="http://">softlab</a> by <a href="https://">@J&G</a>.</p>
+					<p></p>
+					
+					</div>
+				</div>
+
+			</footer>
+			
+			</div>
+		</div>	 
+		
     </div><!-- /.container -->
-
-    <footer class="blog-footer">
-      <p>Testing page built for <a href="http://">softlab</a> by <a href="https://">@J&G</a>.</p>
-     <p>
-		<a href="#">Back to top</a>
-      </p>
-    </footer>
-
 </body>
 </html>

@@ -1,6 +1,5 @@
-<!doctype html>
-
-<html class="">
+<!DOCTYPE html>
+<html lang="en">
 <!--<![endif]-->
 <head>
 <meta charset="utf-8">
@@ -14,9 +13,9 @@
 <link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
 <link href="jQueryAssets/jquery.ui.accordion.min.css" rel="stylesheet" type="text/css">
 
-<!-- Bootstrap css-->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/blog.css" rel="stylesheet">
+    <!-- Bootstrap css -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/custom.min.css">
 
 
 <!-- Parse.js -->
@@ -38,16 +37,20 @@
 
 <body>
 
-    <div class="blog-masthead">
-      <div class="container">
-        <nav class="blog-nav">
-          <!--a class="blog-nav-item" href="index.html">Home</a-->
-          <!--a class="blog-nav-item" href="#">New Registration</a>-->
-          <a class="blog-nav-item active" href="mainpage.html">Back to Main Page</a>
-          <!--<a class="blog-nav-item" href="#">Forgot ID/Password</a>-->
-          <!--<a class="blog-nav-item" href="admin.html">Admin</a>-->
-        </nav>
-      </div>
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+
+			<ul class="nav navbar-nav navbar-right">
+				<!--Example to open new tab by clicking on the nav bar link>
+				<li><a href="signup.html" target="_blank">New Signup</a></li-->		  
+		    
+				<li><a href="mainpage.html">Back to Main Page</a></li>
+			
+			</ul>
+
+			</div>
+		</div>
     </div>
 
 
@@ -58,8 +61,8 @@
 			<p></p>
 					
 	<div>
-		<h5>Click here if you want to Log Out!</h5>
-		<button id="logout">Log Out</button>
+		<button class="btn btn-primary" id="logout">Log Out</button>
+
 	</div>			
 	</br>		
    </div><!-- /.container -->			

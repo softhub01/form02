@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Main Page</title>
  
-    <!-- Bootstrap css-->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/blog.css" rel="stylesheet">
+    <!-- Bootstrap css -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/custom.min.css">
 	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -28,63 +28,80 @@
 
   <body>
 
-    <div class="blog-masthead">
-      <div class="container">
-        <nav class="blog-nav">
-          <!--a class="blog-nav-item" href="index.html">Home</a>
-          <a class="blog-nav-item" href="signup.html">New Signup</a>
-          <a class="blog-nav-item" href="login.html">Login</a>
-          <a class="blog-nav-item" href="resetpwd.html">Forgot Password</a-->
-          <a class="blog-nav-item active" href="#">Main Page</a>
-		  
-        </nav>
-      </div>
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+			<a href="#" class="navbar-brand">Main Page</a>
+			<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			</div>
+        
+		</div>
     </div>
 
     <div class="container">
+		<div class="page-header" id="banner">
+			<div class="row">
 
-      <div class="blog-header">
-        <p class="lead blog-description"></p>
-      </div>
-
-      <div class="row">
-
-        <div class="col-sm-8 blog-main">
-            <div class="main-container">
+				<div class="col-lg-8 col-md-7 col-sm-6">
 			
-			<!--Display Current User Name -->
-			<div id="current-user"></div>
-			</br>		
-			<!-- <button class="add-blog btn btn-lg btn-primary">Add New Task</button> -->
-			<a class="btn btn-lg btn-primary" href="task-options.html" role="button">Add New Task</a>
-			<a class="btn btn-lg btn-primary" href="task-list.html" role="button">View and Update Saved Task</a>
-			<a class="btn btn-lg btn-primary" href="task-delete.html" role="button">Delete Task</a>
-			</div>	
+				<!--Display Current User Name -->
+				<div id="current-user"></div>
+				</br>		
+				<!-- <button class="add-blog btn btn-lg btn-primary">Add New Task</button> -->
+				<a class="btn btn-lg btn-success" href="task-options.html" role="button">Add New Task</a>
+				<a class="btn btn-lg btn-success" href="task-list.html" role="button">View and Update Saved Task</a>
+				<a class="btn btn-lg btn-success" href="task-delete.html" role="button">Delete Task</a>
+
+				</br>
+				</br>
+
+				<div>
 				
-			</br>
+					<button class="btn btn-primary" id="logout">Log Out</button>
+				
+				</div>						
+				
+				
+				</div>	
+				
 
 			
  
-			<div>
-				<button id="logout">Log Out</button>
-			</div>		
-			
-			</div>
-        </div>	
 
 
-       </div><!-- /.row -->
 
-    </div><!-- /.container -->
+			</div><!-- /.row -->
+
+		</div><!-- /.page-header -->
 
 	</br>
 	
-    <footer class="blog-footer">
-      <p>Testing page built for <a href="http://">softlab</a> by <a href="https://">@J&G</a>.</p>
-      <p>
-        <a href="#">Back to top</a>
-      </p>
-    </footer>
+		<div class="bs-docs-section">	
+			<div class="page-header">
+      
+			<footer>
+				<div class="row">
+					<div class="col-lg-12">
 
+					<ul class="list-unstyled">
+					<!--li class="pull-right"><a href="#top">Back to top</a></li-->
+ 					</ul>
+					<p>Testing page built for <a href="http://">softlab</a> by <a href="https://">@J&G</a>.</p>
+					<p></p>
+					
+					</div>
+				</div>
+
+			</footer>
+			
+			</div>
+		</div>	 
+		
+    </div><!-- /.container -->
+	
   </body>
 </html>

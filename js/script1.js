@@ -70,7 +70,7 @@ $(function() {
 					alert("Successful! Thank you.")
 				},error: function(user, error){
 					console.log("signup error:"+error.message);
-					alert("Username already being sign-up, please try another!")
+					alert("Invalid Username / Email address, please try again!")
 				}	 
 			});
 		});

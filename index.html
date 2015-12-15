@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home Page</title>
- 
-    <!-- Bootstrap css -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/blog.css" rel="stylesheet">
 
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Test site: Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/custom.min.css">
+	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
@@ -17,73 +15,236 @@
     <script type="text/javascript" src="https://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
 	
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-
+    <script src="js/bootstrap.min.js"></script>	
 	
-  </head>
-  
+	
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
+      <script src="../bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+	
   <body>
-
-    <div class="blog-masthead">
+    <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
-        <nav class="blog-nav">
-          <a class="blog-nav-item active" href="index.html">Home</a>
-          <a class="blog-nav-item" href="signup.html">New Signup</a>
-          <a class="blog-nav-item" href="login.html">Login</a>
-          <a class="blog-nav-item" href="resetpwd.html">Forgot Password</a>
-        </nav>
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand">Home</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+		<!--Reserved for future use-->
+          <!--ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="navbar-brand" href=#></a>
+
+            <li>
+              <a class="navbar-brand" href=#></a>
+            </li>
+            <li>
+              <a class="navbar-brand" href=#></a>
+            </li>
+
+          </ul-->		<!--Reserved for future use-->
+
+          <ul class="nav navbar-nav navbar-right">
+		  <!--Example to open new tab by clicking on the nav bar link>
+          <li><a href="signup.html" target="_blank">New Signup</a></li-->		  
+		    
+			<li><a href="signup.html">New Signup</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="resetpwd.html">Forgot Password</a></li>			
+          </ul>
+
+        </div>
       </div>
     </div>
 
+
     <div class="container">
 
-      <div class="blog-header">
-        <p class="lead blog-description"></p>
+      <div class="page-header" id="banner">
+        <div class="row">
+          <div class="col-lg-8 col-md-7 col-sm-6">
+            <h1>Welcome!</h1>
+            <p class="lead">This is a demo site which exclusively for your company!</p>
+          </div>
+          <div class="col-lg-4 col-md-5 col-sm-6">
+            <div class="sponsor">
+              <a href=# target="_blank" onclick="">
+                <!--img src="./Bootswatch_ Cerulean_files/shopify.png" alt="Shopify" width="180" height="150" onload=""-->
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-4">
+            <div class="list-group table-of-contents">
+              <a class="list-group-item" href="#side1">Services</a>
+              <a class="list-group-item" href="#side2">Latest News</a>
+              <a class="list-group-item" href="#side3">Charges</a>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="row">
+      <!-- Side1
+      ================================================== -->
+      <div class="bs-docs-section clearfix">
+       <div class="page-header">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="page-header">
+              <h1 id="side1">Services</h1>
+            </div>
 
-        <div class="col-sm-8 blog-main">
-                 <div class="main-container">
-				 
-				 <h1>Welcome!</h1>
-				 <h2>This is a demo site which exclusively for your company!</h2>	
-				 <br>
-				 <h3>If you are new to this site, please click on the top to sign up now!</h3>
-				 <p></p>
-				 <h3>Or else please login directly, thanks.</h3>
-				 </div>
-          </div>	
-
-
-
-
-        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-          <div class="sidebar-module sidebar-module-inset">
-            <h4>About Us</h4>
-            <p>We are just a team of beginners.</p>
+          <div class="col-lg-8 col-md-7 col-sm-6">
+            <h1>Under Construction!</h1>
+            <p class="lead">To be updated soon!</p>
           </div>
 
-          <div class="sidebar-module">
-            <h4>Link(s)</h4>
-            <ol class="list-unstyled">
-              <li><a href="#">GitHub</a></li>
-            </ol>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="list-unstyled">
+              <li class="pull-right"><a href="#top">Back to top</a></li>
+            </ul>
+           </div>
+        </div>	  
+
           </div>
-        </div><!-- /.blog-sidebar -->
-
-      </div><!-- /.row -->
-
-    </div><!-- /.container -->
-
-    <footer class="blog-footer">
-      <p>Testing page built for <a href="http://">softlab</a> by <a href="https://">@J&G</a>.</p>
-      <p>
-        <a href="#">Back to top</a>
-      </p>
-    </footer>
+        </div>
+      </div>
 
 
+      <!-- Side2
+      ================================================== -->
+      <div class="bs-docs-section">
+        <div class="page-header">
+          <div class="row">
+            <div class="col-lg-12">
+			 <div class="page-header">			
+              <h1 id="side2">News</h1>
+            </div>
+
+			<div class="col-lg-8 col-md-7 col-sm-6">
+            <h2>NOTHING TO GET EXCITED ABOUT SO FAR!</h2>
+            <p class="lead">To be updated soon!</p>
+          </div>			
+
+        <div class="row">
+          <div class="col-lg-12">
+
+            <ul class="list-unstyled">
+              <li class="pull-right"><a href="#top">Back to top</a></li>
+            </ul>
+
+          </div>
+        </div>
+			
+          </div>
+        </div>
+      </div>
+
+      <!-- Side3
+      ================================================== -->
+      <div class="bs-docs-section">
+       <div class="page-header">	  
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="page-header">
+              <h1 id="side3">Charges</h1>
+            </div>
+          </div>
+        </div>
+
+        <!-- Headings -->
+
+        <div class="row">
+          <div class="col-lg-4">
+
+          </div>
+          <div class="col-lg-4">
+            <div class="bs-component">
+              <h2>Example 1</h2>
+              <p><strong>First Schedule of the SRO:</strong></p>
+              <p>For the first RM150,000 - 1.0%</p>
+              <p>For the next RM850,000 - 0.7%</p>
+              <p>The following snippet of text is <em>For the next RM2,000,000 - 0.6%</em>.</p>
+              <p>For the next RM2,000,000 - 0.5%</p>
+              <p>For the next RM2,500,000 - 0.4%</p>
+            </div>
+
+          </div>
+          <div class="col-lg-4">
+            <div class="bs-component">
+              <h2>Example 2</h2>
+
+              <p class="text-primary">Where the consideration or adjudicated value is in excess of RM7,500,000</p>
+              <p class="text-primary">- Negotiable on the excess ( but shall not exceed 0.4% of such excess).</p>
+			  
+            </div>
+          </div>
+		  
+        <div class="row">
+          <div class="col-lg-12">
+
+            <ul class="list-unstyled">
+              <li class="pull-right"><a href="#top">Back to top</a></li>
+            </ul>
+
+          </div>
+        </div>					
+			
+			
+
+        </div>
+
+        <!-- Blockquotes -->
+
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 id="type-blockquotes">Blockquotes</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="bs-component">
+              <blockquote>
+                <p>Someone is sitting in the shade today because someone planted a tree a long time ago..</p>
+                <small>Warren Buffett in <cite title="http://www.brainyquote.com/quotes/quotes/w/warrenbuff409214.html">Brainyquote.com</cite></small>
+              </blockquote>
+            </div>
 	
-  </body>
+          </div>
+        </div>
+      </div>
+
+
+
+      <footer>
+        <div class="row">
+          <div class="col-lg-12">
+
+            <ul class="list-unstyled">
+              <li class="pull-right"><a href="#top">Back to top</a></li>
+  
+              </ul>
+			<p>Testing page built for <a href="http://">softlab</a> by <a href="https://">@J&G</a>.</p>
+			<p>
+			</p>
+          </div>
+        </div>
+
+      </footer>
+
+
+    </div>
+
+
+</body>
+
 </html>
