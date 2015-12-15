@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Page</title>
+ 
+    <!-- Bootstrap css-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/blog.css" rel="stylesheet">
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Parse.js -->
+    <script type="text/javascript" src="https://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
+	
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script2.js"></script>
+
+    <!-- Handlebars.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+	
+  </head>
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item" href="index.html">Home</a>
+          <a class="blog-nav-item" href="signup.html">New Signup</a>
+          <a class="blog-nav-item active" href="login.html">Login</a>
+          <a class="blog-nav-item" href="resetpwd.html">Forgot Password</a>
+          <!--a class="blog-nav-item" href="admin.html">Admin</a-->
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="blog-header">
+        <p class="lead blog-description"></p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+            <div class="main-container">
+			
+				<h1> Log In!</h1> 
+				 
+				<form id="login">
+				<p><input id="login-name" type="text" placeholder="Username" required="" autofocus=""></p>
+				<p><input id="login-password" type="password" placeholder="Password" required=""></p>
+				<p><input id="login-submit" type="submit" value="login"></p>
+				<!--a class="btn btn-lg btn-primary" href="/FormApp1/task-options.html" role="button">Login</a-->
+				</form>
+			
+			</div>
+        </div>	
+
+
+
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>About Us</h4>
+            <p>We are just a team of beginners.</p>
+          </div>
+
+          <div class="sidebar-module">
+            <h4>Link(s)</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">GitHub</a></li>
+            </ol>
+          </div>
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+      <p>Testing page built for <a href="http://">softlab</a> by <a href="https://">@J&G</a>.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,190 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		4;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	12;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+.fluid {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+.fluidList {
+    list-style:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;        
+}
+
+/* Mobile Layout: 480px and below. */
+  
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 90.25%;
+	padding-left: 2.375%;
+	padding-right: 2.375%;
+	clear: none;
+	float: none;
+}
+.Header1 {
+}
+#ul1 {
+	line-height: 55px;
+}
+#li1 {
+width: 100%;
+}
+#li2 {
+width: 100%;
+clear: both;
+margin-left: 0;
+}
+#li3 {
+width: 100%;
+clear: both;
+margin-left: 0;
+}
+.zeroMargin_mobile {
+margin-left: 0;
+}
+.hide_mobile {
+display: none;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+.Header1 {
+}
+#ul1 {
+}
+#li1 {
+width: 100%;
+}
+#li2 {
+width: 100%;
+clear: both;
+margin-left: 0;
+}
+#li3 {
+width: 100%;
+clear: both;
+margin-left: 0;
+}
+.hide_tablet {
+display: none;
+}
+.zeroMargin_tablet {
+margin-left: 0;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+
+.gridContainer {
+	width: 88.5%;
+	max-width: 1232px;
+	padding-left: 0.75%;
+	padding-right: 0.75%;
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+	left: 80%;
+}
+.Header1 {
+}
+#ul1 {
+}
+#li1 {
+	width: 23.7288%;
+	height: 60px;
+	text-align: center;
+	Float: left;
+	border-radius: 6px;
+	background-color: #0BEFFB;
+	text-decoration: none;
+	display: block;
+	
+}
+#li2 {
+	width: 23.7288%;
+	height: 60px;
+	margin-left: 1.6949%;
+	clear: none;
+	float: left;
+	text-align: center;
+	border-radius: 5px;
+	left: auto;	
+	border-radius: 6px;
+	background-color: #0BEFFB;
+	text-decoration: none;
+	display: block;
+	
+}
+#li3 {
+	width: 23.7288%;
+	height: 60px;
+	margin-left: 1.6949%;
+	clear: none;
+	float: left;
+	text-align: center;
+	border-radius: 6px;
+	background-color: #0BEFFB;
+	text-decoration: none;
+	display: block;
+}
+.zeroMargin_desktop {
+margin-left: 0;
+}
+.hide_desktop {
+display: none;
+}
+}
+#li1:hover {
+	background-color: #F2F813;
+}
+#li2:hover {
+	background-color: #F2F813;
+}
+#li3:hover {
+	background-color: #F2F813;
+}

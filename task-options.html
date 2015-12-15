@@ -1,0 +1,227 @@
+<!doctype html>
+
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Option Page</title>
+
+<!-- css-->
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="css/test1-process_options.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.accordion.min.css" rel="stylesheet" type="text/css">
+
+<!-- Bootstrap css-->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/blog.css" rel="stylesheet">
+
+
+<!-- Parse.js -->
+<script src="https://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script src="js/respond.min.js"></script>
+<!--script src="jQueryAssets/jquery-1.8.3.min.js" type="text/javascript"></script-->
+<script src="jQueryAssets/jquery-ui-1.9.2.accordion.custom.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <!--a class="blog-nav-item" href="index.html">Home</a-->
+          <!--a class="blog-nav-item" href="#">New Registration</a>-->
+          <a class="blog-nav-item active" href="mainpage.html">Back to Main Page</a>
+          <!--<a class="blog-nav-item" href="#">Forgot ID/Password</a>-->
+          <!--<a class="blog-nav-item" href="admin.html">Admin</a>-->
+        </nav>
+      </div>
+    </div>
+
+
+  <div class="container">
+			<!--Display Current User Name -->
+			<p></p>
+			<strong id="current-user"></strong>			
+			<p></p>
+					
+	<div>
+		<h5>Click here if you want to Log Out!</h5>
+		<button id="logout">Log Out</button>
+	</div>			
+	</br>		
+   </div><!-- /.container -->			
+
+
+
+<div class="gridContainer clearfix">
+  <div id="div1" class="fluid">
+    <!--header id="Task_options" class="fluid"-->
+	
+    <h2>Please choose from the following options and click on SUBMIT button:</h2></header>
+    <div id="div1">
+     <div id="Accordion1">
+       <h3><a href="#">SUBSALE with TITLE</a></h3>
+       <div>
+         
+         <form id="form1" name="form1" method="post"  >
+
+<p><strong>ACTING FOR BANKER</strong>:</p>
+<p>
+  <label>
+    <input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type01">
+    (A) Freehold and Free from encumbrances?</label>
+  <br>
+  <label>
+    <input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type02">
+    (B) Freehold and Charge to bank?
+  </label>
+  <br>
+  <label>
+    <input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type03">
+    (C) Leasehold and Free from encumbrances?</label>
+  <br>
+  <label>
+    <input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type04">
+    (D) Leasehold and Charge to bank?</label>
+  </p>
+  <hr>
+  
+<p><strong>ACTING FOR VENDOR</strong>:</p>
+<p>
+  <label>
+    <input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type05">
+    (A) Freehold and Free from encumbrances?</label>
+  <br>
+  <label>
+    <input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type06">
+    (B) Freehold and Charge to bank? </label>
+  <br>
+  <label>
+    <input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type07">
+    (C) Leasehold and Free from encumbrances?</label>
+  <br>
+  <label>
+    <input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type08">
+    (D) Leasehold and Charge to bank?</label>
+</p>
+<hr>
+
+<p><strong>ACTING FOR PURCHASER</strong>:</p>
+<p>
+  <label>
+    <input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type09">
+    (A) Freehold and Free from encumbrances?</label>
+  <br>
+  <label>
+    <input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type10">
+    (B) Freehold and Charge to bank? </label>
+  <br>
+  <label>
+    <input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type11">
+    (C) Leasehold and Free from encumbrances?</label>
+  <br>
+  <label>
+    <input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type12">
+    (D) Leasehold and Charge to bank?</label>
+</p>
+<hr>
+
+
+<p>
+  <!--Confirm submit to proceed to next page-->
+  <input type="button" value="SUBMIT" onclick="mySubmit1()">
+    
+  <!--input type="button" name="back" onclick="parent.location='/form01/login.html'" value="Back to List"-->
+</p>
+</form>
+</p>
+</div>
+
+<h3><a href="#">SUBSALE without TITLE</a></h3>
+       <div>
+         <p> <h4>ACTING FOR:</h4>   
+         
+         <form id="form1" name="form1" method="post">
+         <p>
+         <label>
+          <input type="checkbox" name="ActingGroup1" value="checkbox" id="ActingGroup1_0">
+          BANKER</label>
+        <br>
+        <label>
+          <input type="checkbox" name="ActingGroup1" value="checkbox" id="ActingGroup1_1">
+          VENDOR</label>
+        <br>
+        <label>
+          <input type="checkbox" name="ActingGroup1" value="checkbox" id="ActingGroup1_2">
+          PURCHASER</label>
+        <br>
+      </p>
+      
+<hr>
+
+<p><strong>ACTING FOR BANKER</strong>:</p>
+<p>
+  <label>
+    <input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type_Group1_0">
+    (A) Freehold and Free from encumbrances?</label>
+  <br>
+  <label>
+    <input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type_Group1_1">
+    (B) Freehold and Charge to bank?
+  </label>
+  <br>
+  <label>
+    <input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type_Group1_2">
+    (C) Leasehold and Free from encumbrances?</label>
+  <br>
+  <label>
+    <input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type_Group1_3">
+    (D) Leasehold and Charge to bank?</label>
+  <br>
+</p>
+    <!--input type="SUBMIT" formmethod="POST" value="Confirm"-->
+    <!--Confirm submit to proceed to next page-->
+    <input type="button" value="SUBMIT" onclick="mySubmit1()">
+	
+	
+    </form></p>
+       </div>
+<h3><a href="#">Perfection of TRANSFER</a></h3>
+<div>
+  <p>TO BE UPDATED SOON</p>
+</div>
+<h3><a href="#">PERFECTION of CHARGE</a></h3>
+<div>
+  <p>TO BE UPDATED SOON</p>
+</div>
+     </div>
+
+     </div>
+
+  </div>
+</div>
+<script type="text/javascript">
+$(function() {
+	$( "#Accordion1" ).accordion(); 
+});
+</script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/task-options.js"></script>
+    <script src="js/script2.js"></script>	
+</body>
+</html>
