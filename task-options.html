@@ -9,7 +9,7 @@
 <!-- css-->
 <link href="boilerplate.css" rel="stylesheet" type="text/css">
 <link href="css/test1-process_options.css" rel="stylesheet" type="text/css">
-<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<!--link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css"-->
 <link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
 <link href="jQueryAssets/jquery.ui.accordion.min.css" rel="stylesheet" type="text/css">
 
@@ -54,15 +54,13 @@
     </div>
 
 
-  <div class="container">
-			<!--Display Current User Name -->
-			<p></p>
-			<strong id="current-user"></strong>			
-			<p></p>
-					
+    <div class="container">
+		<!--Display Current User Name -->
+		<p></p>
+		<strong id="current-user"></strong>			
+		<p></p>
 	<div>
 		<button class="btn btn-primary" id="logout">Log Out</button>
-
 	</div>			
 	</br>		
    </div><!-- /.container -->			
@@ -75,144 +73,227 @@
 	
     <h2>Please choose from the following options and click on SUBMIT button:</h2></header>
     <div id="div1">
-     <div id="Accordion1">
+    <div id="Accordion1">
+	 
+		<!--SECTION :: SUBSALE with Title-->	 
        <h3><a href="#">SUBSALE with TITLE</a></h3>
-       <div>
+	   
+    <div class="container">
          
-         <form id="form1" name="form1" method="post"  >
+		<form id="form1" name="form1" method="post"  >
 
-<p><strong>ACTING FOR BANKER</strong>:</p>
-<p>
-  <label>
-    <input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type01">
-    (A) Freehold and Free from encumbrances?</label>
-  <br>
-  <label>
-    <input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type02">
-    (B) Freehold and Charge to bank?
-  </label>
-  <br>
-  <label>
-    <input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type03">
-    (C) Leasehold and Free from encumbrances?</label>
-  <br>
-  <label>
-    <input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type04">
-    (D) Leasehold and Charge to bank?</label>
-  </p>
-  <hr>
-  
-<p><strong>ACTING FOR VENDOR</strong>:</p>
-<p>
-  <label>
-    <input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type05">
-    (A) Freehold and Free from encumbrances?</label>
-  <br>
-  <label>
-    <input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type06">
-    (B) Freehold and Charge to bank? </label>
-  <br>
-  <label>
-    <input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type07">
-    (C) Leasehold and Free from encumbrances?</label>
-  <br>
-  <label>
-    <input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type08">
-    (D) Leasehold and Charge to bank?</label>
-</p>
-<hr>
+		<ul class="nav nav-tabs" role="tablist">
+			<li class="active">
+				<a href="#tab1A" role="tab" data-toggle="tab">BANKER</a>
+			</li>
+			
+			<li>
+				<a href="#tab1B" role="tab" data-toggle="tab">VENDOR</a>
+			</li>
 
-<p><strong>ACTING FOR PURCHASER</strong>:</p>
-<p>
-  <label>
-    <input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type09">
-    (A) Freehold and Free from encumbrances?</label>
-  <br>
-  <label>
-    <input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type10">
-    (B) Freehold and Charge to bank? </label>
-  <br>
-  <label>
-    <input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type11">
-    (C) Leasehold and Free from encumbrances?</label>
-  <br>
-  <label>
-    <input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type12">
-    (D) Leasehold and Charge to bank?</label>
-</p>
-<hr>
+			<li>
+				<a href="#tab1C" role="tab" data-toggle="tab">PURCHASER</a>
+			</li>
+		</ul>		 
+		 
+		<!-- Tab panes -->		 
+		 
+		<div class="tab-content">
+			<div class="tab-pane fade active in" id="tab1A">		 
+				<p><strong>ACTING FOR BANKER</strong>:</p>
+				<p>
+				<label>
+				<input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type01">
+				(A) Freehold and Free from encumbrances?</label>
+				<br>
+				<label>
+				<input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type02">
+				(B) Freehold and Charge to bank?
+				</label>
+				<br>
+				<label>
+				<input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type03">
+				(C) Leasehold and Free from encumbrances?</label>
+				<br>
+				<label>
+				<input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type04">
+				(D) Leasehold and Charge to bank?</label>
+				</p>
+				<hr>
+			</div>
 
+			<div class="tab-pane fade" id="tab1B">	
+				<p><strong>ACTING FOR VENDOR</strong>:</p>
+				<p>
+				<label>
+				<input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type05">
+				(A) Freehold and Free from encumbrances?</label>
+				<br>
+				<label>
+				<input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type06">
+				(B) Freehold and Charge to bank? </label>
+				<br>
+				<label>
+				<input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type07">
+				(C) Leasehold and Free from encumbrances?</label>
+				<br>
+				<label>
+				<input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type08">
+				(D) Leasehold and Charge to bank?</label>
+				</p>
+				<hr>
+			</div>
 
-<p>
-  <!--Confirm submit to proceed to next page-->
-  <input type="button" value="SUBMIT" onclick="mySubmit1()">
+			<div class="tab-pane fade" id="tab1C">	
+				<p><strong id="tab1C">ACTING FOR PURCHASER</strong>:</p>
+				<p>
+				<label>
+				<input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type09">
+				(A) Freehold and Free from encumbrances?</label>
+				<br>
+				<label>
+				<input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type10">
+				(B) Freehold and Charge to bank? </label>
+				<br>
+				<label>
+				<input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type11">
+				(C) Leasehold and Free from encumbrances?</label>
+				<br>
+				<label>
+				<input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type12">
+				(D) Leasehold and Charge to bank?</label>
+				</p>
+				<hr>
+			</div>
+		</div>	<!-- Tab panes -->	
+		
+		<p>
+		<!--Confirm submit to proceed to next page-->
+		<input type="button" value="SUBMIT" onclick="mySubmit1()">
     
-  <!--input type="button" name="back" onclick="parent.location='/form01/login.html'" value="Back to List"-->
-</p>
-</form>
-</p>
-</div>
+		<!--input type="button" name="back" onclick="parent.location='/form01/login.html'" value="Back to List"-->
+		</p>
+		</form>
+	</p>
+	</div>
 
-<h3><a href="#">SUBSALE without TITLE</a></h3>
-       <div>
-         <p> <h4>ACTING FOR:</h4>   
+	<!--SECTION :: SUBSALE without Title-->
+	<h3><a href="#">SUBSALE without TITLE</a></h3>
+
+       <div class="container">
          
-         <form id="form1" name="form1" method="post">
-         <p>
-         <label>
-          <input type="checkbox" name="ActingGroup1" value="checkbox" id="ActingGroup1_0">
-          BANKER</label>
-        <br>
-        <label>
-          <input type="checkbox" name="ActingGroup1" value="checkbox" id="ActingGroup1_1">
-          VENDOR</label>
-        <br>
-        <label>
-          <input type="checkbox" name="ActingGroup1" value="checkbox" id="ActingGroup1_2">
-          PURCHASER</label>
-        <br>
-      </p>
-      
-<hr>
+		<form id="form1" name="form1" method="post"  >
 
-<p><strong>ACTING FOR BANKER</strong>:</p>
-<p>
-  <label>
-    <input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type_Group1_0">
-    (A) Freehold and Free from encumbrances?</label>
-  <br>
-  <label>
-    <input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type_Group1_1">
-    (B) Freehold and Charge to bank?
-  </label>
-  <br>
-  <label>
-    <input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type_Group1_2">
-    (C) Leasehold and Free from encumbrances?</label>
-  <br>
-  <label>
-    <input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type_Group1_3">
-    (D) Leasehold and Charge to bank?</label>
-  <br>
-</p>
-    <!--input type="SUBMIT" formmethod="POST" value="Confirm"-->
-    <!--Confirm submit to proceed to next page-->
-    <input type="button" value="SUBMIT" onclick="mySubmit1()">
-	
-	
-    </form></p>
-       </div>
-<h3><a href="#">Perfection of TRANSFER</a></h3>
-<div>
-  <p>TO BE UPDATED SOON</p>
-</div>
-<h3><a href="#">PERFECTION of CHARGE</a></h3>
-<div>
-  <p>TO BE UPDATED SOON</p>
-</div>
-     </div>
+		<ul class="nav nav-tabs" role="tablist">
+			<li class="active">
+				<a href="#tab2A" role="tab" data-toggle="tab">BANKER</a>
+			</li>
+			<li role="presentation">
+				<a href="#tab2B" role="tab" data-toggle="tab">VENDOR</a>
+			</li>
 
-     </div>
+			<li role="presentation">
+				<a href="#tab2C" role="tab" data-toggle="tab">PURCHASER</a>
+			</li>
+		</ul>	
+		
+		<!-- Tab panes -->		 
+		 
+		<div class="tab-content">
+			<div class="tab-pane fade active in" id="tab2A">			
+				<p><strong>ACTING FOR BANKER</strong>:</p>
+				<p>
+				<label>
+				<input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type14">
+				(A) Freehold and Free from encumbrances?</label>
+				<br>
+				<label>
+				<input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type15">
+				(B) Freehold and Charge to bank?
+				</label>
+				<br>
+				<label>
+				<input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type16">
+				(C) Leasehold and Free from encumbrances?</label>
+				<br>
+				<label>
+				<input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type17">
+				(D) Leasehold and Charge to bank?</label>
+				<br>
+				</p>
+				<hr>
+			</div>
+
+			<div class="tab-pane fade" id="tab2B">	
+				<p><strong>ACTING FOR VENDOR</strong>:</p>
+				<p>
+				<label>
+				<input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type05">
+				(A) Freehold and Free from encumbrances?</label>
+				<br>
+				<label>
+				<input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type06">
+				(B) Freehold and Charge to bank? </label>
+				<br>
+				<label>
+				<input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type07">
+				(C) Leasehold and Free from encumbrances?</label>
+				<br>
+				<label>
+				<input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type08">
+				(D) Leasehold and Charge to bank?</label>
+				</p>
+				<hr>
+			</div>
+
+			<div class="tab-pane fade" id="tab2C">	
+				<p><strong id="tab1C">ACTING FOR PURCHASER</strong>:</p>
+				<p>
+				<label>
+				<input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type09">
+				(A) Freehold and Free from encumbrances?</label>
+				<br>
+				<label>
+				<input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type10">
+				(B) Freehold and Charge to bank? </label>
+				<br>
+				<label>
+				<input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type11">
+				(C) Leasehold and Free from encumbrances?</label>
+				<br>
+				<label>
+				<input type="radio" name="Subsales_type_Group1" value="radio" id="Subsales_type12">
+				(D) Leasehold and Charge to bank?</label>
+				</p>
+				<hr>
+			</div>
+		</div>	<!-- Tab panes -->	
+				
+		<p>
+		<!--Confirm submit to proceed to next page-->
+		<input type="button" value="SUBMIT" onclick="mySubmit1()">
+    
+		<!--input type="button" name="back" onclick="parent.location='/form01/login.html'" value="Back to List"-->
+		</p>
+		</form>
+	</p>
+	</div>
+	
+	<!--SECTION :: Perfection of Transfer-->	
+	<h3><a href="#">Perfection of Transfer</a></h3>
+	<div>
+		<p>TO BE UPDATED SOON</p>
+	</div>
+	
+	<!--SECTION :: SUBSALE without Title-->
+	<h3><a href="#">PERFECTION of CHARGE</a></h3>
+	<div>
+		<p>TO BE UPDATED SOON</p>
+	</div>
+    
+	</div>
+
+    </div>
 
   </div>
 </div>

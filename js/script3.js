@@ -16,7 +16,7 @@
 	  function checkLogin() {
 		if(Parse.User.current()) {
 			//console.log("Logged in! "+Parse.User.current().get("username"));
-			$("#current-user").html("Welcome! User: "+Parse.User.current().get("username"));
+			$("#current-user").html("Current User : "+Parse.User.current().get("username"));
 		} else {
 			// if nobody is login, show blank
 			$("#current-user").html("");
